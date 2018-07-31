@@ -3,86 +3,312 @@
 /* CSS Document */
 
 /*This is Public CSS. Plaese link this file in all pages*/
-*{
+
+* {
 	box-sizing: border-box;
+	transition: 0.4s;
+	font-family: "montserrat";
+	color: #081727;
 }
-
+h3,
+h2 {
+	margin: 0;
+}
 .color {
-	color: #9F3720
+	color: #9F3720;
+}
+.color_2 {
+	color: #91979e;
+}
+@font-face {
+	font-family: "yrsa";
+	src: url("Resource/fonts/yrsa.ttf");
+}
+@font-face {
+	font-family: "raleway";
+	src: url("Resource/fonts/raleway.ttf");
+}
+@font-face {
+	font-family: "muli";
+	src: url("Resource/fonts/muli.ttf");
+}
+@font-face {
+	font-family: "montserrat";
+	src: url("Resource/fonts/montserrat.ttf");
+}
+h1 {
+	line-height: 80px;
+}
+h1,
+h2 {
+	font-family: "yrsa";
+}
+.container {
+	max-width: 1500px;
+	/*min-width: 1040px;*/
+	margin: 0 auto;
+	height: 100%;
 }
 
-.content{
-	max-width: 1000px;
-	min-width: 900px;
-	margin: 0 auto;
+/*apply .container to the wrapper of every area*/
+
+.frame {
+	min-width: 1040px;
+	width: 100%;
+	position: relative;
+	/*display: flex;不能用*/
 }
-/*apply .content to the wrapper of every area*/
 
 /*Header Start*/
+
 body {
 	margin: 0;
 }
-
 .header {
 	background-color: white;
 	width: 100%;
-	height: 90px;
+	height: 70px;
 	margin: 0;
+	box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.4);
+	position: sticky;
+	top: 0;
+	z-index: 100;
 }
-
-.header_content{
+.header_container {
 	height: 100%;
+	padding: 0 20px;
+	display: block;
 }
-
 .header_link {
 	display: inline-block;
 	height: 100%;
-	line-height: 90px;
+	line-height: 70px;
 	text-align: center;
 	vertical-align: top;
 	color: black;
 	text-decoration: none;
 	margin: 0 10px;
+	padding: 0 5px;
 	float: right;
-	width: 75px;
-	
+	/*width: 75px; I think we don't need this*/
 }
-.header_link:hover{
+.header_link:hover {
 	background-color: #9f3720;
 	color: white;
 }
-
 .header_logo {
-	background: url("Resource/Logo.svg")  no-repeat center;
+	background: url("Resource/Logo.svg") no-repeat center;
 	width: 200px;
 	height: 100%;
 	display: inline-block;
 	margin: 0 10px;
 }
-
-hr{
-	border: 1px #8d8d8d solid;
-	margin: -4px 0 0 0;
-	max-width: inherit;
-	color: #ececec;
+.header_line {
+	display: inline-block;
+	width: 1px;
+	height: 40px;
+	background-color: black;
+	margin: 15px 5px;
 }
+.header_region {
+	display: inline-block;
+	line-height: 70px;
+	vertical-align: top;
+	font-size: 20px;
+}
+.header_link:hover .menu {
+	display: block;
+}
+.menu {
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background-color: beige;
+}
+.menu_link {
+	display: block;
+}
+
 /*Header end*/
 
-/*Footer Start*/
-.footer{
-	width: 100%;
-	height: 100px;
-	background: black;
-	
+.bar_container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bar_container_2 {
+	width: 1100px;
+	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	/*position: relative;*/
+	/*top: 50%;*/
+	/*transform: translateY(-50%);*/
+}
+.bar_line {
+	background-color: #9F3720;
+	height: 2px;
+	width: 100px;
+	position: relative;
+	top: 5px;
+	left: -15px;
+}
+.bar_title {
+	width: 35%;
+	font-size: 50px;
+	display: inline-block;
+	margin: 0 30px;
+}
+.bar_text {
+	width: 65%;
+	margin: 0px 25px;
+	font-size: 18px;
+	vertical-align: middle;
 }
 
-.footer_content{
+/*Footer Start*/
+
+.footer {
+	width: 100%;
+	height: 70px;
+	background: black;
+}
+.footer_container {
 	color: white;
 	text-align: center;
 	height: 100%;
-	line-height: 100px;
-	/*padding: 50px 0;*/
+	line-height: 70px;
 }
 
 /*Footer End*/
 
+.area {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 600px;
+	/*height: calc(width*0.7);*/
+	/*height: 20%*/
+	/*border-bottom: 1px solid red;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+.area_1 {
+	background-image: url(Resource/pawel-szymankiewicz-112966-unsplash.jpg);
+	/*margin-top: 70px;*/
+	height: 700px;
+}
+.area_1_container {
+	position: relative;
+	margin: 0 auto;
+}
+.area_1_container_2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	height: 100%;
+}
+.area_1_title {
+	text-align: left;
+	position: relative;
+	right: 130px;
+	bottom: 70px;
+	line-height: 100px;
+}
+.welcome_bar {
+	height: 300px;
+	/*background-color: #eaeaea;*/
+	/*#555*/
+	vertical-align: middle;
+	color: #000;
+}
+.area_2345_container {
+	/*用来方便地施加flex*/
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.area_2345_container_2 {
+	/*用来将文字定位到图片底部*/
+	position: absolute;
+	bottom: 70px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.area_2345_line {
+	height: 3px;
+	width: 110px;
+	background-color: #9F3720;
+	margin: 0 auto;
+	position: relative;
+	top: -15px;
+}
+.area_2 {
+	background-image: url(Resource/jason-wong-352463-unsplash.jpg);
+}
+.area_3 {
+	background-image: url(Resource/soroush-karimi-192112-unsplash.jpg);
+}
+.area_4 {
+	background-image: url(Resource/hunters-race-408744-unsplash.jpg);
+}
+.area_5 {
+	background-image: url(Resource/yvonne-lee-harijanto-41745-unsplash.jpg);
+}
+h1 {
+	text-align: center;
+	font-size: 85px;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	color: white;
+	margin: 15px 0;
+}
+.area_text {
+	color: white;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	margin: 3px 0;
+	transition: opacity 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+	/*opacity: 0;*/
+}
+.area_button {
+	display: block;
+	width: 200px;
+	color: white;
+	background-color: blue;
+	text-align: center;
+	margin-top: 20px;
+	padding: 7px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 700;
+}
+.area_button_1 {
+	background-color: #8f5034;
+}
+.area_button_1:hover {
+	background-color: hsla(18, 47%, 21%, 1);
+}
+.area_button_2 {
+	background-color: #b57d2e;
+}
+.area_button_2:hover {
+	background-color: hsla(35, 58%, 26%, 1);
+}
+.area_button_3 {
+	background-color: #3f465b;
+}
+.area_button_3:hover {
+	background-color: hsla(225, 18%, 15%, 1);
+}
+.area_button_4 {
+	background-color: #c5531a;
+}
+.area_button_4:hover {
+	background-color: hsla(20, 77%, 28%, 1);
+}

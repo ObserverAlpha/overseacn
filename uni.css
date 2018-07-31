@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+.area_text {
+	color: white;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	margin: 10px 0;
+	transition: opacity 0.5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+	/*opacity: 0;*/
+}
+.area_uni {
+	/*background-image:url(Resource/unibg.jpg);*/
+	background-color: white;
+	width: 100%;
+	height: 500px;
+	/*height: 20%*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	min-width: 1040px;
+}
+.area_uni1 {
+	height: 550px;
+}
+.text_1 {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	margin: 5% 10%;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 15px rgba(128, 128, 128, 0.4);
+	padding: 0 10px 25px 10px;
+	width: 40%;
+	height: auto;
+	line-height: 20px;
+}
+.text_1:hover {
+	transform: translateY(-15px);
+}
+.text_1:hover a {
+	/*color:#2bace0;*/
+}
+.text_1 h3 {
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	margin: 30px 15px 15px 15px;
+}
+.text_1 p {
+	text-align: left;
+	font-size: 15px;
+	color: black;
+	margin: 3% 3%;
+	color: #91979E;
+}
+.text_1 a {
+	color: #9F3720;
+	font-size: 15px;
+	margin: 3% 3%;
+	text-decoration: none;
+}
+.text_2:hover {
+	transform: translateY(-15px);
+}
+.text_2:hover a {
+	/*color:#2bace0;*/
+}
+.text_2 {
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	margin: 5% 10%;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 15px rgba(128, 128, 128, 0.4);
+	padding: 0 10px 25px 10px;
+	width: 40%;
+	height: auto;
+	line-height: 20px;
+}
+.text_2 h3 {
+	text-align: right;
+	font-size: 20px;
+	color: black;
+	margin: 30px 15px 15px 15px;
+}
+.text_2 p {
+	text-align: right;
+	font-size: 15px;
+	color: black;
+	margin: 3% 3%;
+	color: #91979E;
+}
+.text_2 a {
+	text-align: center;
+	color: #9F3720;
+	font-size: 15px;
+	margin-bottom: 3%;
+	margin-left: 80%;
+	text-decoration: none;
+}
+.uni_pic1 {
+	position: absolute;
+	display: flex;
+	right: 0px;
+	width: 48%;
+	height: 450px;
+	margin: 0% 10%;
+	/*background-color: yellow;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.uni_pic2 {
+	position: absolute;
+	display: flex;
+	left: 0px;
+	width: 48%;
+	height: 450px;
+	margin: 0% 10%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.uni_1 {
+	background-image: url(Resource/UM_B.png);
+	width: 48%;
+	height: 427px;
+	position: absolute;
+	margin: 0% 7.5% 100px 45%;
+	float: right;
+}
+.uni_2 {
+	background-image: url(Resource/UPM_B.png);
+	width: 48%;
+	height: 418px;
+	margin: 0% 100% 100px 7.5%;
+	float: left;
+	position: absolute;
+}
+.uni_3 {
+	background-image: url(Resource/UKM_B.JPG);
+	width: 48%;
+	height: 427px;
+	margin: 0% 7.5% 100px 45%;
+	float: right;
+	position: absolute;
+}
+.uni_4 {
+	background-image: url(Resource/UTM_B.png);
+	width: 48%;
+	height: 418px;
+	margin: 0% 45% 100px 7.5%;
+	float: left;
+	position: absolute;
+}
+.uni_5 {
+	background-image: url(Resource/USM_B.png);
+	width: 48%;
+	height: 420px;
+	margin: 0% 7.5% 100px 47%;
+	float: right;
+	position: absolute;
+}
+.uni_6 {
+	background-image: url(Resource/XMUM_B1.jpg);
+	width: 48%;
+	height: 427px;
+	margin: 0% 45% 100px 7.5%;
+	position: absolute;
+	float: left;
+}
